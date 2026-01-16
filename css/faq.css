@@ -1,0 +1,148 @@
+.faq-section {
+  background-color: #f9fafb;
+  color: #111827;
+  padding: 80px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6b7280;
+  letter-spacing: 1px;
+}
+
+.headline {
+  font-size: 38px;
+  font-weight: 800;
+  margin: 10px 0 25px;
+  color: #111827;
+}
+
+.description {
+  font-size: 17px;
+  color: #374151;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+/* FAQ List */
+.faq-list details {
+  background-color: #ffffff;
+  border-left: 5px solid #00C982;
+  padding: 20px 25px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.faq-list details[open] {
+  border-color: #00C982;
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.faq-list summary {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Arrow rotation */
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+details[open] .arrow {
+  transform: rotate(90deg);
+}
+
+/* FAQ content */
+.faq-list ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style: disc;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.faq-list.details.coming-soon {
+  border-left-color: #f59e0b;
+  background: linear-gradient(145deg, #fff7ed, #fffbf5);
+}
+
+/* Contact Info */
+.contact-info {
+  background-color: #ffffff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.05);
+  margin-top: 40px;
+}
+
+.contact-info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.contact-info ul {
+  list-style: disc inside;
+  font-size: 16px;
+  color: #4b5563;
+}
+
+.contact-info ul li {
+  margin-bottom: 8px;
+}
+
+.contact-info ul li a {
+  color: #00C982;
+  text-decoration: underline;
+}
+
+.contact-info ul li a:hover {
+  color: #039260;
+}
+
+.footer {
+    background-color: #f0f0f0;
+    color: var(--foreground);
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.footer-right {
+  font-family: monospace;
+  color: #555;
+}

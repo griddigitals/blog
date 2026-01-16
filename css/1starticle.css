@@ -1,0 +1,378 @@
+
+.checklist-box {
+  padding: 1.2rem 1.4rem;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.03);
+  margin: 1.4rem 0 2rem;
+}
+
+
+/* ================================
+   CONTRAST BOX
+================================ */
+
+.contrast-box {
+  padding: 1.2rem 1.4rem;
+  margin: 1.5rem 0 2rem;
+  border-left: 4px solid rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.035);
+  border-radius: 10px;
+}
+
+
+.section-list {
+  margin: 1rem 0 2rem 1.5rem;
+  list-style-type: disc;
+  line-height: 1.7;
+}
+.section-list li {
+  margin-bottom: 0.75rem;
+}
+
+
+/* --- Roadmap Table Styling --- */
+.roadmap-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff; /* light table background */
+}
+
+.roadmap-table th,
+.roadmap-table td {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid #d1d5db; /* subtle gray border */
+}
+
+.roadmap-table th {
+  background-color: #dcfce7; /* light green header for accent */
+  color: black; /* dark green text */
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.roadmap-table tbody tr:nth-child(even) {
+  background-color: #f0fdf7; /* very light green stripe for rows */
+}
+
+.roadmap-table tbody tr:hover {
+  background-color:  #00C98222;
+  transition: 0.3s ease;
+}
+
+.roadmap-table td strong {
+  color: #111; /* green for key items */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .roadmap-table th,
+  .roadmap-table td {
+    padding: 0.8rem 0.9rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .roadmap-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .roadmap-table th,
+  .roadmap-table td {
+    white-space: nowrap;
+  }
+}
+
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.step-title {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.step-list, .checklist {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.step-list li,
+.checklist li {
+  background: #f5f8fd;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+
+  list-style: disc;      /* show bullet */
+  list-style-position: inside; /* bullet appears inside the padding */
+}
+
+.example {
+  font-style: italic;
+  background: #fff3e0;
+  border-left: 4px solid #ff9800;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .section-title { font-size: 1.6rem; }
+  .step-title { font-size: 1.1rem; }
+  .step-list li, .checklist li, .example { font-size: 0.95rem; }
+}
+
+
+.kpi-table-wrapper {
+  overflow-x: auto;
+  margin-top: 1.5rem;
+}
+
+.kpi-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.kpi-table th,
+.kpi-table td {
+  padding: 0.9rem;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+  vertical-align: top;
+}
+
+.kpi-table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+}
+
+.kpi-table td strong {
+  color: #111827;
+}
+
+
+.subtitle {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+
+.action-plan-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff; /* light card background */
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* subtle shadow for depth */
+}
+
+.action-plan-table thead {
+  background: #f0fdf7; /* very light green background for header */
+}
+
+.action-plan-table th {
+  text-align: left;
+  padding: 1rem;
+  font-weight: 600;
+  color: black; /* dark green for header text */
+  border-bottom: 1px solid #d1d5db;
+}
+
+.action-plan-table td {
+  padding: 1rem;
+  vertical-align: top;
+  border-bottom: 1px solid #e5e7eb;
+  color: #111; /* dark text for readability */
+  transition: background 0.3s ease;
+}
+
+/* Hover effect on table rows */
+.action-plan-table tr:hover td {
+  background:  #00C98222 ;
+}
+
+.action-plan-table tr:last-child td {
+  border-bottom: none;
+}
+
+.action-plan-table ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.action-plan-table li {
+  margin-bottom: 0.4rem;
+}
+
+.action-plan-table strong {
+  color: #111; /* match accent green */
+}
+
+/* ===== Mobile Responsive Table ===== */
+@media (max-width: 768px) {
+  .action-plan-table thead {
+    display: none;
+  }
+
+  .action-plan-table,
+  .action-plan-table tbody,
+  .action-plan-table tr,
+  .action-plan-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .action-plan-table tr {
+    margin-bottom: 1.5rem;
+    background: #f9fdfb; /* light card background for mobile rows */
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 0.5rem 0;
+  }
+
+  .action-plan-table td {
+    border: none;
+    padding: 0.75rem 1rem;
+  }
+
+  .action-plan-table td::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #4b5563; /* dark gray for mobile labels */
+    margin-bottom: 0.25rem;
+  }
+}
+
+
+
+.faq-section {
+  padding: 4rem 1rem;
+  background: #f9f9f9; /* light background */
+  color: #111; /* dark text */
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.faq-subtitle {
+  color: #555; /* darker gray for subtitle */
+  margin-bottom: 2rem;
+}
+
+.faq-item {
+  background: #fff; /* white card background */
+  border-radius: 14px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border: 1px solid #ddd; /* subtle border for light theme */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* optional subtle shadow */
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary:hover {
+  background: linear-gradient(90deg, #00C98222, #00E4FF22); /* subtle hover effect */
+}
+
+.faq-icon {
+  width: 18px;
+  height: 18px;
+  position: relative;
+}
+
+.faq-icon::before,
+.faq-icon::after {
+  content: "";
+  position: absolute;
+  background: #00C982; /* same accent color works on light theme */
+  transition: transform 0.3s ease;
+}
+
+.faq-icon::before {
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.faq-icon::after {
+  height: 100%;
+  width: 2px;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+/* Open state */
+.faq-item[open] .faq-icon::after {
+  transform: translateX(-50%) rotate(90deg);
+}
+
+.faq-content {
+  padding: 0 1.5rem 1.5rem;
+  color: #333; /* darker text for readability */
+  line-height: 1.7;
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.inline-link{
+  color: #00C982;
+  text-decoration: underline;
+}

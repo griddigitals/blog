@@ -1,0 +1,116 @@
+.insights-section {
+  background-color: #fff; /* light gray background for contrast */
+  color: #111827;
+  padding: 100px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.subtitle .coming-soon {
+  color: #00C982; /* vibrant pink accent */
+  font-style: italic;
+}
+
+.headline {
+  font-size: 40px;
+  font-weight: 800;
+  margin: 15px 0 30px;
+  color: #111827;
+}
+
+.description {
+  font-size: 18px;
+  color: #374151;
+  line-height: 1.7;
+  margin-bottom: 50px;
+}
+
+/* Focus Cards */
+.focus-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 280px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.card:hover {
+  transform: translateY(-5px) rotate(-1deg);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+/* Note Text */
+.note {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 35px;
+}
+
+/* .cta-container {
+  text-align: center;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, #00C982, #00E4FF);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 14px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+filter: brightness(1.1);
+  box-shadow: 0 0 60px hsla(168, 76%, 42%, 0.3);
+  transform: translateY(-2px);
+} */
+
+.footer {
+  background-color: #f9f9f9;
+  color:  #111111;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-top: 1px solid #ddd
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.footer-right {
+  font-family: monospace;
+  color: #555;
+}

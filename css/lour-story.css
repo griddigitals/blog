@@ -1,0 +1,150 @@
+:root {
+  /* Core Backgrounds */
+  --background: #ffffff;           /* Main page background */
+  --foreground: #111111;           /* Primary text color */
+  --card: #f7f7f7;                 /* For blocks/cards */
+  --secondary: #f0f0f0;            /* Secondary panels or sections */
+
+  /* Muted Text */
+  --muted-foreground: #555555;
+
+  /* Borders & Lines */
+  --border: #dddddd;
+
+  /* Brand Colors */
+  --primary: hsl(168, 76%, 42%);   /* Brand green */
+  --primary-foreground: #ffffff;
+
+  /* Accents */
+  --accent: hsl(168, 76%, 42%);
+  --accent-soft: hsla(168, 76%, 42%, 0.12);
+
+  /* Gradients */
+  --hero-gradient: linear-gradient(135deg, hsl(168, 76%, 42%), hsl(190, 80%, 48%));
+
+  /* Radius */
+  --radius: 14px;
+
+  /* Typography */
+  --heading-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --body-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.story-page {
+    font-family: var(--body-font);
+    background-color: var(--background);
+    color: var(--foreground);
+    line-height: 1.8;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: hsl(168, 76%, 50%);
+}
+
+
+.story-hero {
+    background: var(--hero-gradient);
+    color: var(--primary-foreground);
+    text-align: center;
+    padding: 6rem 1.5rem 4rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.story-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.story-hero .story-subtitle {
+    font-size: 1.25rem;
+    color: hsla(0, 0%, 100%, 0.85);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+.story-content {
+    padding: 4rem 1.5rem;
+}
+
+.story-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.story-block {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background-color: var(--card);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.story-block p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--muted-foreground);
+}
+
+
+.highlight-block {
+    border-left: 4px solid var(--primary);
+    background-color: var(--secondary);
+    padding-left: 1.5rem;
+}
+
+.highlight-block p {
+    color: var(--foreground);
+    font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+    .story-hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .story-hero .story-subtitle {
+        font-size: 1rem;
+    }
+
+    .story-block {
+        padding: 1rem;
+    }
+}
+
+
+.footer {
+    background-color: #f0f0f0;
+    color: var(--foreground);
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.footer-right {
+  font-family: monospace;
+  color: #555;
+}

@@ -1,0 +1,135 @@
+.help-section {
+  background-color: #f3f4f6;
+  color: #111827;
+  padding: 80px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6b7280;
+  letter-spacing: 1px;
+}
+
+.headline {
+  font-size: 38px;
+  font-weight: 800;
+  margin: 15px 0 30px;
+  color: #111827;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 50px;
+}
+
+/* Help Cards */
+.help-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 25px 20px;
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid #10b981;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.card.coming-soon {
+  border-left-color: #00C982;
+  background: linear-gradient(145deg, #fff7ed, #fffbf5);
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.08);
+}
+
+/* Contact Info */
+.contact-info {
+  background-color: #ffffff;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.contact-info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.contact-info ul {
+  list-style: disc inside;
+  font-size: 16px;
+  color: #4b5563;
+}
+
+.contact-info ul li {
+  margin-bottom: 8px;
+}
+
+.contact-info ul li a {
+  color: #10b981;
+  text-decoration: underline;
+}
+
+.contact-info ul li a:hover {
+  color: #059669;
+}
+
+
+
+.footer {
+  background-color: #f9f9f9;
+  color:  #111111;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-top: 1px solid #ddd
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.footer-right {
+  font-family: monospace;
+  color: #555;
+}

@@ -1,0 +1,124 @@
+/* Donation Section - Light Mode */
+ .donation-section {
+  margin-bottom: 1.5rem;
+}
+
+ .donation-card {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border); /* use light mode border variable */
+  background-color: var(--secondary); /* light secondary bg */
+  
+  text-align: center;
+  box-shadow: 0 6px 24px rgba(0, 201, 130, 0.08); /* subtle green glow */
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+ .donation-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0, 201, 130, 0.12);
+}
+
+ .donation-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--foreground); /* dark text for light bg */
+  margin-bottom: 1rem;
+}
+
+ .donation-text {
+  font-size: 1rem;
+  color: var(--muted-foreground); /* slightly muted dark text */
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+ .donate-button {
+  display: inline-block;
+  padding: 0.6rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  background: var(--cta-gradient); /* same gradient as primary buttons */
+  color: var(--primary-foreground); /* ensures good contrast on light theme */
+  text-decoration: none;
+  transition: filter 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+ .donate-button:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0 60px hsla(0, 0%, 0%, 0.1); /* subtle hover glow for light mode */
+  transform: translateY(-2px);
+}
+
+.donation-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.donation-modal.active {
+  display: flex;
+}
+
+.donation-modal-content {
+  background: #ffffff;
+  padding: 2rem;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.close-modal {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.donation-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.donation-option {
+  padding: 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.donation-option:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.flutterwave {
+  background: #f5a623;
+}
+
+.paystack {
+  background: #0aa5db;
+}
+
+.crypto {
+  background: #2d3748;
+}

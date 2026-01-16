@@ -1,0 +1,103 @@
+.news-ticker {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  gap: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+
+  /* Light-mode subtle background, aligned with nav.panel-bg */
+background: linear-gradient(
+  90deg,
+  #F7FAFC,
+  #F0F4F8,
+  #EDF2F7,
+  #F7FAFC
+);
+background-size: 400% 400%;
+animation: gradientShiftLight 25s ease infinite;
+
+
+  /* Separate slightly from nav */
+  margin-top: calc(var(--nav-height, 72px) + 16px);
+
+  /* Light subtle shadow */
+  box-shadow: 0 3px 6px rgba(15,26,31,0.08);
+}
+
+.news-ticker .label {
+  background: var(--accent-1); /* Grid Digit primary */
+  color: #FFFFFF; /* text contrast for light mode */
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+  margin-left: 52px;
+
+  /* subtle shadow for pop */
+  box-shadow: 0 2px 6px rgba(0,201,130,0.25);
+}
+
+.news-ticker .label::before {
+  content: "";
+  width: 2px;
+  height: 18px;
+  background: rgba(255,255,255,0.6); /* slightly stronger for visibility */
+  margin-right: 6px;
+  display: inline-block;
+  border-radius: 1px;
+}
+
+.ticker-wrap {
+  overflow: hidden;
+  flex: 1;
+}
+
+.ticker {
+  display: inline-flex;
+  white-space: nowrap;
+  gap: 60px;
+  animation: tickerMove 18s linear infinite;
+}
+
+.ticker span {
+  font-size: 14.5px;
+  font-weight: 500;
+  opacity: 0.85;
+  cursor: pointer;
+  color: var(--white);
+  transition: color 0.2s;
+}
+
+.ticker span:first-child {
+  margin-left: -8px;
+}
+
+.ticker span:hover {
+  color: var(--accent-2);
+}
+
+@keyframes tickerMove {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes gradientShiftLight {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@media(max-width:540px) {
+  .ticker span { font-size: 13px; }
+  .ticker { animation-duration: 25s; }
+  .news-ticker .label { padding: 5px 12px; font-size: 13px; }
+}
+
+

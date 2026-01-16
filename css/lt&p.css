@@ -1,0 +1,144 @@
+:root {
+  /* Core Backgrounds */
+  --background: #ffffff;
+  --foreground: #111111;
+  --card: #f4f4f4;
+  --secondary: #e6f7ed;
+
+  /* Text */
+  --muted-foreground: #555555;
+
+  /* Borders & Lines */
+  --border: #ddd;
+
+  /* Brand Colors */
+  --primary: #00b050;
+  --primary-foreground: #ffffff;
+  --accent: #00b050;
+  --accent-soft: rgba(0, 176, 80, 0.12);
+
+  /* Radius */
+  --radius: 8px;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body & Layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  line-height: 1.8;
+  scroll-behavior: smooth;
+}
+
+main {
+  margin: 1rem 1.5rem;
+}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+}
+
+/* Headings */
+h1 {
+  color: var(--primary);
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Date / Meta info */
+.date {
+  font-size: 0.9rem;
+  color: var(--muted-foreground);
+  margin-bottom: 2rem;
+}
+
+/* Details / Summary Styling */
+details {
+  margin-bottom: 1rem;
+}
+
+summary {
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: background-color 0.3s ease;
+  color: var(--primary);
+}
+
+summary:hover {
+  background-color: var(--secondary);
+}
+
+details[open] summary {
+  background-color: var(--accent-soft);
+  font-weight: 700;
+}
+
+/* Content inside details */
+.content {
+  padding: 1rem 1.5rem;
+  background-color: #ffffff;
+  border-left: 3px solid var(--primary);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-radius: 0 0 var(--radius) var(--radius);
+  margin-top: -1px;
+}
+
+.content ul {
+  padding-left: 1.5rem;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  color: var(--muted-foreground);
+}
+
+.content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--muted-foreground);
+}
+
+/* Links */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--card);
+  color: var(--foreground);
+  text-align: center;
+  padding: 2rem 1.5rem;
+  margin-top: 4rem;
+  border-top: 1px solid var(--border);
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.footer-right {
+  font-family: monospace;
+  color: #555;
+}

@@ -1,0 +1,13 @@
+User-agent: *
+
+# Block sensitive or unnecessary directories
+Disallow: /cgi-bin/
+Disallow: /private/
+Disallow: /config/
+Disallow: /tmp/
+
+# Allow public images
+Allow: /images/
+
+# Sitemap for search engines
+Sitemap: https://griddigitals-blog.netlify.app/sitemap.xml

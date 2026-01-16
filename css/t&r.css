@@ -1,0 +1,114 @@
+.tools-section {
+  background-color: #ffffff; /* light background */
+  color: #1a1a1a; /* main text color */
+  padding: 80px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280; /* gray subtitle */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.subtitle .coming-soon {
+  font-style: italic;
+  color: #00C982; /* accent for coming soon */
+}
+
+.headline {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 10px 0 20px;
+  color: #111827;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: #374151;
+}
+
+.focus-areas {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.focus-areas h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.focus-areas h3 .coming-soon {
+  font-style: italic;
+  color: #00C982;
+}
+
+.focus-areas ul {
+  list-style: disc inside;
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.6;
+  padding-left: 0;
+}
+
+.focus-areas ul li {
+  margin-bottom: 10px;
+}
+
+.note {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+/* .cta-container {
+  text-align: center;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, #00C982, #00E4FF); 
+  color: #ffffff;
+  font-weight: 600;
+  padding: 14px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+filter: brightness(1.1);
+  box-shadow: 0 0 60px hsla(168, 76%, 42%, 0.3);
+  transform: translateY(-2px);
+} */
+
+.footer {
+  background-color: #f9f9f9;
+  color:  #111111;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-top: 1px solid #ddd
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.footer-right {
+  font-family: monospace;
+  color: #555;
+}
+
+
